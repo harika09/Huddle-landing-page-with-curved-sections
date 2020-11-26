@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Poppins:wght@700&display=swap');
+
+:root{
+
+    /* ==== Primary Colors ====*/
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Ping: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+
+    /* ==== Neutral Colors ==== */
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff
+}
+
+/* ========== Banner ========== */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-button a{
+    text-decoration: none;
+    color: pink;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 0 2px pink;
+}
+
+
+.banner-section{
+    color: #111;
+    text-align: center;
+    padding: 80px 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner-section .banner-title h1{
+    font-size: 3rem;
+}
+
+.banner-section .banner-title p{
+    display: block;
+    width: 500px;
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: var(--Very-Dark-Cyan);
+}
+
+.banner-section .banner-title a, .build-section .build-text a {
+    background-color: var(--Pink);
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 80px;
+    border-radius: 50px;
+}   
+
+.banner-section .banner-title a:hover, .build-section .build-text a:hover{
+    background-color: #fd97dd;
+}
+
+.banner-section .banner-img .banner-image{
+    width: 850px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+/* ========== Followers ========== */
+.followers-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    padding: 40px 80px 200px 80px;
+    background: url(/assets/img/bg-section-top-desktop-1.svg) no-repeat bottom;
+    background-size: contain;
+}
+
+.followers-section .followers-community h1,  .followers-messages h1{
+    font-size: 4rem;
+}
+
+.followers-section .followers-community span, .followers-messages span{
+    position: absolute;
+}
+.followers-section .followers-community h3, .followers-messages h3{
+    font-weight: 700;
+    color: #7F8D99;
+}
+
+
+
+/* ========== Grow Together ========== */
+.grow-together-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    color: #111;
+    padding: 40px 80px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Very-Pale-Blue);
+}
+
+.grow-together-section .grow-together-text h2, .flowing-conversation-section .flowing-conversation-text h2, .your-user-section .your-user-text h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.grow-together-section .grow-together-text p, .flowing-conversation-section .flowing-conversation-text p, .your-user-section .your-user-text p{
+    max-width: 550px;
+}
+
+.grow-together-section .grow-together-img img{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ==== Flowing Conversation ==== */
+.flowing-conversation-section{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    color: #111;
+    padding: 80px 80px;
+    min-height: 70vh;
+    font-family: 'Open Sans', sans-serif;
+    background: url(/assets/img/bg-section-bottom-desktop-1.svg) no-repeat top;
+    background-size: contain;
+}
+
+.flowing-conversation-section .flowing-conversation-img img{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.flowing-conversation-section::before{
+    content: ""; 
+    background: url(/assets/img/bg-section-top-desktop-2.svg) no-repeat bottom;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ==== Your User ==== */
+
+.your-user-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    color: #111;
+    padding: 80px 80px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Very-Pale-Blue);
+}
+
+.your-user-section .your-user-img img{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ==== Build Community ==== */
+.build-section{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: url(/assets/img/bg-section-bottom-desktop-1.svg) no-repeat top;
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.build-section::before{
+    content: ""; 
+    background: url(/assets/img/bg-footer-top-desktop.svg) no-repeat bottom;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+
+.build-section .build-text{
+    text-align: center;
+    color: #111;
+}
+
+.build-section .build-text h1{
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+/* ==== Foooter ==== */
+.footer-container{
+    background-color: var(--Very-Dark-Cyan);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-container .footer-social .logo{
+    margin-bottom: 20px;
+    filter: invert(1);
+}
+
+.footer-container .footer-social p{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-social .footer-connect {
+    margin-bottom: 40px;
+}
+.footer-container .footer-social .footer-connect a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-container .footer-social .footer-connect a img{
+    margin-right: 20px;
+    
+}
+
+.footer-container .footer-social .social{
+    font-size: 2.5rem;
+}
+
+.footer-container .footer-social .social i:hover{
+    color: #2887c8;
+    cursor: pointer;
+}
+
+.footer-container .footer-news{
+    margin-bottom: 80px;
+}
+
+.footer-container .footer-news h2{
+    font-size: 1.5rem;
+}
+
+.footer-container .footer-connect a{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-news p{
+    width: 380px;
+    font-size: 1rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-news .subscribe{
+    width: 300px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: none
+}
+
+.footer-container .footer-news .validate-btn{
+    padding: 10px 20px;
+    background-color: var(--Pink);
+    border: none;
+    color: #fff;
+    border-radius:  5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.footer-container .footer-news .validate-btn:hover{
+    background-color: #fd97dd;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+
+    /* ==== Header ==== */
+    .header .header-img img{
+        width: 100px;
+    }
+
+    /*==== banner =====*/
+
+    .banner-section .banner-title p{
+        width: 100%;
+    }
+
+    /* Grow Together */
+    .grow-together-section{
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .grow-together-section .grow-together-img{
+        grid-row-start: 1;
+    }
+
+    /* ==== Flowing Coversation ====*/
+    .flowing-conversation-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* ==== Your Users ==== */
+    .your-user-section{
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .your-user-section .your-user-img{
+        grid-row-start: 1;
+    }
+
+    /* ==== Footer ====*/
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+       
+    }
+
+    .footer-container .footer-news{
+        grid-row-start: 1;
+    }
+
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+
+    /* ==== Header ====*/
+    .header{
+        padding: 50px 30px;
+    }
+
+    .header-button{
+        font-size: .8rem;
+    }
+
+      /*==== banner =====*/
+    .banner-section{
+        padding: 50px 30px;
+    }
+
+    .banner-section .banner-title h1{
+        font-size: 1.2rem;
+    }
+
+    .banner-section .banner-title p{
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+
+    .banner-section .banner-title a{
+        padding: 10px 20px;
+    }
+
+    .banner-section .banner-img{
+        margin-top: 40px;
+    }
+
+    .grow-together-section, .flowing-conversation-section, .your-user-section{
+        padding: 40px 40px;
+    }
+
+
+    /* ==== Followers ====*/
+    .followers-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        background: url(/assets/img/bg-section-top-mobile-1.svg) no-repeat bottom;
+        background-size: contain;
+    }
+
+    .followers-section h3{
+        color: #7F8D99;
+    }
+    .followers-section .followers-community{
+        margin-bottom: 40px;
+    }
+
+    /* ==== Build ==== */
+    .build-section .build-text a{
+        padding: 10px 20px;
+    }
+
+
+    /* ==== Footers ==== */
+
+    .footer-container .footer-news p, .footer-container .footer-social p{
+        width: 250px;
+    }
+
+    .footer-container .footer-news .subscribe {
+        width: 250px;
+        padding: 10px 5px;
+    }
+
+    .footer-container .footer-news .validate {
+       display: block;
+       position: relative;
+    }
+
+    .footer-container .footer-news .validate span{
+        font-size: .8rem;
+    }
+
+
+}
